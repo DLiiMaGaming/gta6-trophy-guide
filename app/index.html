@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Atlas — GTA VI trophy guide &amp; tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: roadmap to the Platinum, missable flags, cited guides, and a checklist that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+  <h1>Leonida Trophy Atlas</h1>
+  <p class="lede">Every trophy, its official name, description and grade, a guide in our own words with its sources, a road to the Platinum — and a checklist that remembers what you have earned. No account, no network: it runs entirely from these files.</p>
+  <div class="progress-wrap" aria-label="Progress toward the Platinum">
+    <div class="progress-numbers"><strong id="earned-count">0 / 55</strong><span id="earned-percent">0% to the Platinum</span></div>
+    <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+    <p class="progress-grades" id="grade-counts"></p>
+  </div>
+  <nav class="page-nav" aria-label="Sections">
+    <a href="#checklist">Checklist</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#missables">Missables</a>
+    <a href="#about">About &amp; sources</a>
+  </nav>
+</header>
+
+<main>
+<section class="panel controls" aria-label="Checklist controls">
+  <div class="control-row">
+    <label class="search-label">Search <input id="search" type="search" placeholder="Trophy name or word…" autocomplete="off"></label>
+    <label>Kind
+      <select id="kind-filter">
+        <option value="all">All kinds</option>
+        <option value="story">Story</option>
+        <option value="missable">Missable</option>
+        <option value="collectible">Collectibles</option>
+        <option value="activity">Activities</option>
+        <option value="online">Online</option>
+      </select>
+    </label>
+    <label>Grade
+      <select id="grade-filter">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label class="check-label"><input id="earned-only" type="checkbox"> Earned only</label>
+    <label class="check-label"><input id="spoiler-toggle" type="checkbox"> Hide story spoilers</label>
+  </div>
+  <div class="control-row">
+    <button id="export-btn" type="button">Export progress</button>
+    <label class="import-label">Import progress <input id="import-input" type="file" accept="application/json,.json"></label>
+    <button id="reset-btn" type="button">Reset checklist</button>
+    <span class="saved-note" id="saved-note" role="status">Progress saves in this browser automatically.</span>
+  </div>
+  <p class="filter-note" id="filter-note"></p>
+</section>
+
+<section id="checklist" class="panel" aria-label="Trophy checklist">
+  <h2>Trophy checklist</h2>
+  <p class="section-note">Tick a trophy off when you earn it. Open a card for its guide and sources. Story trophies are hidden on PlayStation until earned — turn on <em>Hide story spoilers</em> above and their names stay covered until you tick them.</p>
+  <div id="trophy-list" class="trophy-list"></div>
+  <p id="empty-note" class="empty-note" hidden>No trophies match these filters.</p>
+</section>
+
+<section id="roadmap" class="panel" aria-label="Roadmap to the Platinum">
+  <h2>Roadmap to the Platinum</h2>
+  <p class="section-note" id="roadmap-intro"></p>
+  <ol id="roadmap-stages" class="roadmap-stages"></ol>
+</section>
+
+<section id="missables" class="panel" aria-label="Missable trophies">
+  <h2>Missable trophies</h2>
+  <p class="section-note">Built from the official descriptions and the launch guides: only one trophy in the list can be missed. Everything else stays available after the credits, including every side-story finale. The safety net is the same in both cases — keep a manual save at the start of every chapter, because the game has no mission replay.</p>
+  <div id="missable-list" class="trophy-list"></div>
+  <p class="section-note">Story trophies are unmissable: they pop as you play the missions. Trophies marked <strong>potentially missable</strong> above are the only ones that need a save.</p>
+</section>
+
+<section id="about" class="panel" aria-label="About and sources">
+  <h2>About &amp; sources</h2>
+  <p>Trophy names, descriptions and grades are the official ones as PlayStation publishes them, taken from Exophase and PSNProfiles, which agree on all 55. Every guide on this page is written in our own words for this guide and names the source each fact comes from — a source is cited, never copied. Where no reliable method has been published yet, the guide says so instead of guessing.</p>
+  <p>Counts the game tracks: 250 stunts, 42 Shooting Range gold medals, 100 WAiNK locations, 100 vehicles, 50 Challenges, 8 stranger strands, 3 card sets, 5 bank vaults, 10 registered vehicles, $250,000 of laundered marked bills and $100,000 spent. There are no online trophies — all 55 are single-player — and no difficulty or mission-medal trophies.</p>
+  <p class="fineprint">An unofficial fan guide. Not affiliated with, endorsed by or connected to Rockstar Games or PlayStation. No Rockstar logo, artwork or game screenshot is used anywhere in this guide.</p>
+</section>
+</main>
+
+<footer class="colophon">
+  <p>Leonida Trophy Atlas — an offline guide. Your progress never leaves this browser.</p>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
